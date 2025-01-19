@@ -1,79 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="frontpg.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRAS - Pandemic Resource Allocation System</title>
+  <link rel="stylesheet" href="frontpg.css">
 </head>
-<body >
-    <header>
-        <div class="header">
-            <h1>PRAS</h1>
-            <p>Pandemic Resources Allocation System</p>
-        </div>
-    </header>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">PRAS</h1>
+      <p class="hero-subtitle">Pandemic Resource Allocation System</p>
+      <p class="hero-description">
+        An integrated platform connecting governments, hospitals, and citizens for efficient healthcare resource management.
+      </p>
+      <div class="hero-buttons">
+        <a href="#government" class="button primary">Get Started</a>
+        <a href="#about" class="button secondary">Learn More</a>
+      </div>
+    </div>
+  </section>
 
-    <main>
-        <div class="container">
+  <!-- Portal Access Section -->
+  <section class="portal-access" id="portals">
+    <div class="container">
+      <div class="portal">
+        <div class="icon bg-blue"><i class="fas fa-building"></i></div>
+        <h2>Government Portal</h2>
+        <p>For government officials and administrators.</p>
+        <ul class="tags">
+          <li>Resource allocation management</li>
+          <li>Real-time monitoring dashboard</li>
+          <li>Emergency response coordination</li>
+        </ul>
+        <form action="http://127.0.0.1:5500/login.html">
+            <button class="btn">Access Portal</button>
+        </form>
         
-            <div class="card-container">
-            <!-- Government Portal -->
-                <div class="card" id="govCard">
-                    <div class="card-icon">📄</div>
-                    <h2>Government Portal</h2>
-                    <p>Secure access portal for government officials to manage and coordinate healthcare resources.</p>
-                
-                    <form action="http://127.0.0.1:5500/login.html">
-                        <button>Login</button>
-                    </form>
-            
-                <!-- <button>Register</button> -->
-                </div>
+      </div>
+      <div class="portal">
+        <div class="icon bg-green"><i class="fas fa-hospital"></i></div>
+        <h2>Hospital Dashboard</h2>
+        <p>For hospital staff and administrators.</p>
+        <ul class="tags">
+          <li>Resource availability updates</li>
+          <li>Patient capacity management</li>
+          <li>Staff scheduling and coordination</li>
+        </ul>
+        <form action="http://127.0.0.1:5500/hsptl.html">
+            <button class="btn">Access Portal</button>
+        </form>
+      </div>
+      <div class="portal">
+        <div class="icon bg-purple"><i class="fas fa-users"></i></div>
+        <h2>Citizen Portal</h2>
+        <p>For public access to healthcare information.</p>
+        <ul class="tags">
+          <li>Hospital resource availability</li>
+          <li>Emergency service locations</li>
+          <li>Public health updates</li>
+        </ul>
+        <form action="http://127.0.0.1:5500/ctzn.html">
+            <button class="btn">Access Portal</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
-            <!-- Hospital Dashboard -->
-                <div class="card" id="hptlCard">
-                    <div class="card-icon">🏥</div>
-                        <h2>Hospital Dashboard</h2>
-                        <p>Dashboard for hospital administrators to manage facility resources and track availability.</p>
-                        
-                        <form action="http://127.0.0.1:5500/hsptl.html">
-                            <button >Login</button>
-                        </form>    
-                        <form action="http://127.0.0.1:5500/hsptlreg.html" >
-                            <button >Register</button>
-                        </form> 
-                           
-                    </div>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>About PRAS Platform</h2>
+      <p>
+        In times of healthcare crises, rapid and effective resource management can save countless lives. 
+        Our platform bridges the gap between stakeholders during critical times.
+      </p>
+      <div class="features">
+        <div class="feature">
+          <h3>Real-Time Updates</h3>
+          <p>Hospitals can manually update critical resources like beds, oxygen, and ventilators.</p>
+        </div>
+        <div class="feature">
+          <h3>Resource Management</h3>
+          <p>A centralized tool for authorities to allocate resources efficiently and monitor feedback.</p>
+        </div>
+        <div class="feature">
+          <h3>Community Access</h3>
+          <p>A user-friendly interface for citizens to check resource availability and report issues.</p>
+        </div>
+        <div class="feature">
+          <h3>Feedback System</h3>
+          <p>Citizens can raise concerns, enabling authorities to address gaps effectively.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <!-- Citizen Portal -->
-                <div class="card" id="ctznCard">
-                    <div class="card-icon">👥</div>
-                        <h2>Citizen Portal</h2>
-                        
-                        <p>Public portal for accessing healthcare facility information and resource availability.</p>
-                        <br />
-                        <form action="http://127.0.0.1:5500/ctzn.html">
-                            <button class="widebtn">Access Portal</button>
-                    </div>
-                </div>
-            </div>
-        </div>    
-    </main>
-<hr/>
-    <footer>
-        <div class="about">
-            <h3>About PRAS</h3>
-            <p>PRAS is a comprehensive platform designed to facilitate efficient resource management and coordination between government bodies, healthcare facilities, and citizens during health emergencies. The platform provides real-time updates on medical resource availability, predictive analytics for demand forecasting, and seamless communication channels for emergency response.</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 PRAS. All rights reserved.</p>
+        <div class="links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact Us</a>
         </div>
-    </footer>
-<!--    
-    <footer>
-        <div class="about">
-            <h3>About GNIDA PRAFS</h3>
-            <p>GNID SAPP is a comprehensive platform designed to facilitate efficient resource management and coordination between government bodies, healthcare facilities, and citizens during health emergencies. The platform provides real-time updates on medical resource availability, predictive analytics for demand forecasting, and seamless communication channels for emergency response.</p>
-        </div>
-    </footer> -->
-    <!-- </div> -->
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

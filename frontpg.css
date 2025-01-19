@@ -1,149 +1,145 @@
-body {
-  font-family: Arial, sans-serif;
+/* General Reset */
+* {
   margin: 0;
   padding: 0;
-  
+  box-sizing: border-box;
 }
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+/* a {
+  text-decoration: none;
+} */
 
-.container {
-  height: 200px;
-  margin: 0 auto; 
-  padding:20px;
-  margin-bottom: 500px;
-} 
-
-.header {
-  height: 80px;
-  width: 1300px;
+/* Hero Section */
+.hero {
+  background: linear-gradient(to bottom, #1e293b, #0f172a);
+  color: white;
   text-align: center;
+  padding: 100px 20px;
+}
+.hero-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.hero-subtitle {
+  font-size: 24px;
+  color: #94a3b8;
+}
+.hero-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #cbd5e1;
+}
+.hero-buttons .button {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.button.primary {
+  background: #3b82f6;
+  color: white;
+}
+.button.secondary {
+  background: transparent;
+  border: 2px solid #3b82f6;
+  color: #3b82f6;
+}
+
+/* Portal Access */
+.portal-access {
+  background: #f9fafb;
+  padding: 50px 20px;
+}
+.portal {
+  text-align: center;
+  padding-left: 20px;
+  /* margin-bottom: 30px; */
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 8px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+.portal h2 {
+  margin: 20px 0 10px;
+  color: #1e293b;
+}
+.portal .icon {
+  font-size: 48px;
   margin-bottom: 10px;
-  position: fixed;
-  background-color:black;
-  padding-bottom: 45px;
-  
-
 }
+.bg-blue { color: #3b82f6; }
+.bg-green { color: #10b981; }
+.bg-purple { color: #8b5cf6; }
 
-.header h1 {
-  font-size: 40px;
-  color:rgb(251, 248, 248);
+/* About Section */
+.about {
+  padding: 50px 20px;
+  background: white;
 }
-
-.header p {
-  font-size: 20px;
-  color:  #fefcfc;
+.about h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #1e293b;
 }
-
-.card-container {
-  height: 350px;
-  margin-top: 300px;
+.features {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 40px;
-  
-  
-
+  flex-wrap: wrap;
 }
-
-.card {
-
-  flex:1 ; 
-  background:white;
-  border: 1px solid rgb(233, 232, 232);
-  border-radius: 10px;
-  text-align: center;
+.feature {
+  flex: 1 1 45%;
+  margin: 10px;
   padding: 20px;
-  /* bo255, 183, 0 4px255, 183, 0, 0.1); */
-  transition: transform 0.3s;
-  
+  background: #f1f5f9;
+  border-radius: 8px;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+/* Footer */
+.footer {
+  background: #1e293b;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
-
-.card-icon {
-  font-size: 48px;
-  margin-bottom: 20px;
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
-.card h2 {
-  font-size: 24px;
-  color: black;
-  margin-bottom: 10px;
+.footer .links a {
+  margin: 0 10px;
+  color: #3b82f6;
 }
-
-.card p {
-  font-size: 20px;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-.card button {
-  padding: 10px 70px;
+.btn{
+  width: 180px;
+  padding: 5px 30px;
   font-size: 16px;
   color: #fff;
   background-color: black;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
-  
-  
-  
-  
-  
+  .btn:hover {
+    background-color: #555;
+  }
+  margin-left: 30%;
+  margin-right: 30%;
+}  
+.tags{
+  list-style-type: none;
 }
-
-.card button:hover {
-  background-color: #555;
+.portal p{
+  color: #666;
 }
-
-/* .about {
-  
-  text-align: center;
-  margin-top: 20px;
-  
-  
+.portal li{
+  color:  #666;
 }
-
-.about p {
-  font-size: 14px;
-  color: #151515;
-  line-height: 1.6;
-  margin: 0;
-}*/
-
-/* 
-a {
-  text-decoration: none; 
-  color: inherit;       
-  
-}  */
-
-.widebtn{
-  width:320px;
-} 
-/* #hptlCard{
-  background-image: url("hospital\ block.webp");
-  background-size: cover;
-}
-#ctznCard{
-  background-image: url("istockphoto-498240967-612x612.jpg");
-  background-size: cover;
-}
-#govCard{
-  background-image: url("istockphoto-1279771642-612x612.jpg" );
-  background-size: cover;
-}  */
-.container{
-  background-image:url("istockphoto-1279771642-612x612.jpg") ;
-  background-size:cover ;
-  
-} 
-.about{
-  text-align: center;
-  
-}
-
