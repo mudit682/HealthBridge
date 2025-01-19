@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citizen Portal</title>
+  <link href="Cdash.css" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-gray-50">
+  <!-- Header -->
+  <header class="bg-white shadow-sm">
+    <div class="container mx-auto px-4 py-6">
+      <div class="flex items-center justify-between">
+        <div>
+          <h1 class="text-2xl font-bold text-gray-900">Citizen Portal</h1>
+          <p class="mt-1 text-gray-600">Find healthcare facilities and access health resources</p>
+        </div>
+        <a href="/" class="text-sm text-gray-600 hover:text-blue-500">Back to Home</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-8">
+    <div class="tabs space-y-4">
+      <!-- Tabs List -->
+      <div class="tabs-list w-full flex justify-start gap-4">
+        <button class="tab-trigger active" data-tab="search">Search Hospitals</button>
+        <button class="tab-trigger" data-tab="feedback">Feedback</button>
+        <button class="tab-trigger" data-tab="health">Health Resources</button>
+      </div>
+
+      <!-- Search Tab -->
+      <div class="tab-content active" id="search">
+        <div class="card">
+          <div class="card-header">
+            <h2>Search Healthcare Facilities</h2>
+            <p>Find hospitals and check available resources</p>
+          </div>
+          <div class="card-content space-y-4">
+            <div class="flex flex-col gap-4 md:flex-row">
+              <div class="relative flex-1">
+                <input type="text" placeholder="Search by hospital name or location" class="input pl-9">
+                <span class="icon-search"></span>
+              </div>
+              <select class="select">
+                <option value="">Resource type</option>
+                <option value="beds">Hospital Beds</option>
+                <option value="icu">ICU Units</option>
+                <option value="oxygen">Oxygen Supply</option>
+                <option value="ventilators">Ventilators</option>
+              </select>
+              <button class="btn md:w-[120px]">Search</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Search Results -->
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div class="card">
+            <div class="card-header">
+              <h3>City Hospital 1</h3>
+              <p>2.5 km away</p>
+            </div>
+            <div class="card-content space-y-2">
+              <div class="flex justify-between">
+                <span>Available Beds</span>
+                <span class="text-green-600">15</span>
+              </div>
+              <div class="flex justify-between">
+                <span>ICU Units</span>
+                <span class="text-yellow-600">3</span>
+              </div>
+              <div class="flex justify-between">
+                <span>Rating</span>
+                <span>4.5</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="btn-outline">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feedback Tab -->
+      <div class="tab-content" id="feedback">
+        <div class="grid gap-4 md:grid-cols-2">
+          <!-- Feedback Form -->
+          <div class="card">
+            <div class="card-header">
+              <h2>Submit Feedback</h2>
+              <p>Share your experience or report issues</p>
+            </div>
+            <div class="card-content space-y-4">
+              <select class="select">
+                <option value="">Choose a hospital</option>
+                <option value="city">City Hospital</option>
+                <option value="general">General Hospital</option>
+              </select>
+              <textarea placeholder="Share your experience..." class="textarea"></textarea>
+              <button class="btn">Submit Feedback</button>
+            </div>
+          </div>
+
+          <!-- Recent Reviews -->
+          <div class="card">
+            <div class="card-header">
+              <h2>Recent Reviews</h2>
+              <p>Latest community feedback</p>
+            </div>
+            <div class="card-content">
+              <p>Example Review Content Here</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Health Resources Tab -->
+      <div class="tab-content" id="health">
+        <div class="grid gap-4 md:grid-cols-2">
+          <div class="card">
+            <div class="card-header">
+              <h2>Latest Health Updates</h2>
+              <p>Stay informed about health matters</p>
+            </div>
+            <div class="card-content">
+              <p>Example Health Updates Here</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

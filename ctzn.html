@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citizen Portal</title>
+  <link rel="stylesheet" href="ctzn.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <div class="min-h-screen bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+      <div class="container">
+        <div class="header-content">
+          <div>
+            <h1 class="title">Citizen Portal</h1>
+            <p class="subtitle">
+              Find healthcare facilities and check resource availability
+            </p>
+          </div>
+          <a href="http://127.0.0.1:5500/pendemic.html" class="back-link">Back to Home</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Search Section -->
+    <section class="container search-section">
+      <div class="card">
+        <div class="card-header">
+          <h2>Search Healthcare Facilities</h2>
+          <p>Find hospitals and check available resources in your area</p>
+        </div>
+        <div class="card-content">
+          <div class="form">
+            <div class="search-input">
+              <i class="fa fa-search"></i>
+              <input type="text" placeholder="Search by hospital name or location" />
+            </div>
+            <select class="rsbtn">
+              <option value="">Resource type</option>
+              <option value="beds">Hospital Beds</option>
+              <option value="icu">ICU Units</option>
+              <option value="oxygen">Oxygen Supply</option>
+              <option value="ventilators">Ventilators</option>
+            </select>
+            <button class="search-button">Search</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="container results-section">
+      <div class="grid">
+        <!-- Sample Hospital Cards -->
+        <div class="card">
+          <div class="card-header">
+            <h3>Sample Hospital 1</h3>
+            <p>2.5 km away</p>
+          </div>
+          <div class="card-content">
+            <div class="resource">
+              <span>Available Beds</span>
+              <span class="green">15</span>
+            </div>
+            <div class="resource">
+              <span>ICU Units</span>
+              <span class="yellow">3</span>
+            </div>
+            <div class="resource">
+              <span>Oxygen Supply</span>
+              <span class="green">Available</span>
+            </div>
+            <button class="details-button">View Details</button>
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+              <h3>Sample Hospital 1</h3>
+              <p>2.5 km away</p>
+            </div>
+            <div class="card-content">
+              <div class="resource">
+                <span>Available Beds</span>
+                <span class="green">15</span>
+              </div>
+              <div class="resource">
+                <span>ICU Units</span>
+                <span class="yellow">3</span>
+              </div>
+              <div class="resource">
+                <span>Oxygen Supply</span>
+                <span class="green">Available</span>
+              </div>
+              <button class="details-button">View Details</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+              <h3>Sample Hospital 1</h3>
+              <p>2.5 km away</p>
+            </div>
+            <div class="card-content">
+              <div class="resource">
+                <span>Available Beds</span>
+                <span class="green">15</span>
+              </div>
+              <div class="resource">
+                <span>ICU Units</span>
+                <span class="yellow">3</span>
+              </div>
+              <div class="resource">
+                <span>Oxygen Supply</span>
+                <span class="green">Available</span>
+              </div>
+              <button class="details-button">View Details</button>
+            </div>
+        </div>   
+      </div>
+    </section>
+  </div>
+</body>
+</html>
