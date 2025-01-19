@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Registration</title>
+    <link rel="stylesheet" href="hsptlreg.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1">PRAS</h1>
+        <div class="header">
+            <h2>Hospital Registration</h2>
+            <a href="http://127.0.0.1:5500/pendemic.html" class="back-to-home">Back to Home</a>
+        </div>
+        <p>Register your hospital in the system</p>
+        <form>
+            <label for="hospital-name">Hospital Name</label>
+            <input type="text" id="hospital-name" placeholder="Enter hospital name" required>
+
+            <label for="hospital-type">Hospital Type</label>
+            <select id="hospital-type" required>
+                <option value="" disabled selected>Select hospital type</option>
+                <option value="public">Public Hospital</option>
+                <option value="private">Private Hospital</option>
+                <option value="center">Specialized Center</option>
+                <option value="clinic">Clinic</option>
+            </select>
+
+            <label for="admin-name">Administrator Name</label>
+            <input type="text" id="admin-name" placeholder="Administrator Name" required>
+
+            <label for="admin-position">Position</label>
+            <input type="text" id="admin-position" placeholder="Administrator Position" required>
+
+            <label for="register-email">Hospital Email</label>
+            <input type="email" id="register-email" placeholder="admin@hospital.com" required>
+
+            <label for="contact-number">Contact Number</label>
+            <input type="tel" id="contact-number" placeholder="Enter contact number" required>
+
+            <label for="register-password">Password</label>
+            <input type="password" id="register-password" placeholder="Enter your password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+
+            <button class="btn" type="submit">Register Hospital</button>
+            <a href="#" class="link">Already registered? Sign In</a>
+        </form>
+    </div>
+</body>
+</html>

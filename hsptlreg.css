@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.container {
+    max-width: 400px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 40px auto; /* Add margin for spacing */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.back-to-home {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.back-to-home:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin-bottom: 16px;
+    color: #555;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #333;
+}
+
+.link {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Ensure the page is scrollable even when zooming */
+html, body {
+    min-height: 100%; /* Ensure the body stretches to fit content */
+    height: auto; /* Remove fixed height constraint */
+}
+.h1{
+    text-align: center;
+    font-size: 50px;
+}

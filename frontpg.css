@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.container {
+  height: 200px;
+  margin: 0 auto; 
+  padding:20px;
+  margin-bottom: 500px;
+} 
+
+.header {
+  height: 80px;
+  width: 1300px;
+  text-align: center;
+  margin-bottom: 10px;
+  position: fixed;
+  background-color:black;
+  padding-bottom: 45px;
+  
+
+}
+
+.header h1 {
+  font-size: 40px;
+  color:rgb(251, 248, 248);
+}
+
+.header p {
+  font-size: 20px;
+  color:  #fefcfc;
+}
+
+.card-container {
+  height: 350px;
+  margin-top: 300px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 40px;
+  
+  
+
+}
+
+.card {
+
+  flex:1 ; 
+  background:white;
+  border: 1px solid rgb(233, 232, 232);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  /* bo255, 183, 0 4px255, 183, 0, 0.1); */
+  transition: transform 0.3s;
+  
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.card button {
+  padding: 10px 70px;
+  font-size: 16px;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+  
+  
+  
+  
+}
+
+.card button:hover {
+  background-color: #555;
+}
+
+/* .about {
+  
+  text-align: center;
+  margin-top: 20px;
+  
+  
+}
+
+.about p {
+  font-size: 14px;
+  color: #151515;
+  line-height: 1.6;
+  margin: 0;
+}*/
+
+/* 
+a {
+  text-decoration: none; 
+  color: inherit;       
+  
+}  */
+
+.widebtn{
+  width:320px;
+} 
+/* #hptlCard{
+  background-image: url("hospital\ block.webp");
+  background-size: cover;
+}
+#ctznCard{
+  background-image: url("istockphoto-498240967-612x612.jpg");
+  background-size: cover;
+}
+#govCard{
+  background-image: url("istockphoto-1279771642-612x612.jpg" );
+  background-size: cover;
+}  */
+.container{
+  background-image:url("istockphoto-1279771642-612x612.jpg") ;
+  background-size:cover ;
+  
+} 
+.about{
+  text-align: center;
+  
+}
+

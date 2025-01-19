@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Hdashboard.css">
+  <style>
+    .tab-trigger.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="border-b">
+    <div class="container flex h-16 items-center justify-between px-4">
+      <div class="flex items-center gap-4">
+        <a href="/" class="text-sm text-muted-foreground hover:text-primary">← Back to Home</a>
+        <h1 class="text-lg font-semibold">Hospital Dashboard</h1>
+      </div>
+      <div class="flex items-center gap-4">
+        <button class="outline-none text-gray-500"><span class="h-4 w-4">🔔</span></button>
+        <button class="outline-none text-gray-500"><span class="h-4 w-4">⚙</span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-1 space-y-4 p-8 pt-6">
+
+    <!-- Tabs -->
+    <div class="tabs space-y-4">
+      <div class="tabs-list flex gap-4">
+        <button class="tab-trigger active" onclick="showTab('overview')">Overview</button>
+        <button class="tab-trigger" onclick="showTab('patient-management')">Patient Management</button>
+        <button class="tab-trigger" onclick="showTab('resources')">Resources</button>
+        <button class="tab-trigger" onclick="showTab('staff-management')">Staff Management</button>
+      </div>
+
+      <!-- Overview Tab Content -->
+      <div id="overview" class="tab-content overview active space-y-4">
+        <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+          <div class="card">
+            <div class="card-header flex items-center justify-between">
+              <span class="text-sm font-medium">Total Patients</span>
+              <span>👥</span>
+            </div>
+            <div class="card-content">
+              <div class="text-2xl font-bold">1,234</div>
+              <p class="text-xs text-gray-500">+180 this week</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header flex items-center justify-between">
+              <span class="text-sm font-medium">Bed Occupancy</span>
+              <span>📊</span>
+            </div>
+            <div class="card-content">
+              <div class="text-2xl font-bold">85%</div>
+              <p class="text-xs text-gray-500">32 beds available</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header flex items-center justify-between">
+              <span class="text-sm font-medium">Staff on Duty</span>
+              <span>👥</span>
+            </div>
+            <div class="card-content">
+              <div class="text-2xl font-bold">45</div>
+              <p class="text-xs text-gray-500">Current shift</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header flex items-center justify-between">
+              <span class="text-sm font-medium">Critical Cases</span>
+              <span>⚠</span>
+            </div>
+            <div class="card-content">
+              <div class="text-2xl font-bold">8</div>
+              <p class="text-xs text-gray-500">In ICU care</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recent Patients Table -->
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">Recent Patients</span>
+            <p class="card-description">Latest patient admissions and updates</p>
+          </div>
+          <div class="card-content">
+            <table class="table-auto w-full">
+              <thead>
+                <tr>
+                  <th class="py-2">Patient ID</th>
+                  <th class="py-2">Name</th>
+                  <th class="py-2">Status</th>
+                  <th class="py-2">Department</th>
+                  <th class="py-2">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>P-1234</td>
+                  <td>John Doe</td>
+                  <td><span class="badge">Admitted</span></td>
+                  <td>General Medicine</td>
+                  <td><button class="btn-sm">View Details</button></td>
+                </tr>
+                <tr>
+                  <td>P-1235</td>
+                  <td>Jane Smith</td>
+                  <td><span class="badge badge-danger">Critical</span></td>
+                  <td>ICU</td>
+                  <td><button class="btn-sm">View Details</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Patient Management Tab Content -->
+      <div id="patient-management" class="tab-content space-y-4">
+        <!-- Add your content for the Patient Management tab here -->
+        <p>Content for Patient Management</p>
+      </div>
+
+      <!-- Resources Tab Content -->
+      <div id="resources" class="tab-content space-y-4">
+        <!-- Add your content for the Resources tab here -->
+        <p>Content for Resources</p>
+      </div>
+
+      <!-- Staff Management Tab Content -->
+      <div id="staff-management" class="tab-content space-y-4">
+        <!-- Add your content for the Staff Management tab here -->
+        <p>Content for Staff Management</p>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    function showTab(tabId) {
+      // Hide all tab contents
+      const tabContents = document.querySelectorAll('.tab-content');
+      tabContents.forEach(tab => {
+        tab.classList.remove('active');
+      });
+
+      // Remove active class from all tab triggers
+      const tabTriggers = document.querySelectorAll('.tab-trigger');
+      tabTriggers.forEach(tab => {
+        tab.classList.remove('active');
+      });
+
+      // Show the clicked tab's content
+      document.getElementById(tabId).classList.add('active');
+
+      // Add active class to the clicked tab trigger
+      const activeTab = document.querySelector([onclick="showTab('${tabId}')"]);
+      activeTab.classList.add('active');
+    }
+  </script>
+</body>
+</html>
